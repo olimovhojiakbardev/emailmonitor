@@ -1,0 +1,8 @@
+I have decided to analyze the json file. 
+
+You have make a prompt for ai to analyze the json file.
+
+first of all the ai should pay attention to the jb hunt load emails. check their structure where the company stamp starts, how the subjects are labeled, body that requires load info or there are only image which tells us the deliver location. 
+
+for the beginning jb hunt would be enough but to identify if it is from jbhunt we should make a dataset to use for ai prompt in the future.
+

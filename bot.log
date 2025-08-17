@@ -1,0 +1,17 @@
+2025-08-14 02:09:01,264 - INFO - Authenticating with Gmail API...
+2025-08-14 02:27:12,924 - INFO - "GET /?state=1HeV13BAnb97k1z8098odyRqTSmoqg&code=4/0AVMBsJj_Oys2YS9GCRi4pAIG6lUikPKrW6deaHec1UMRDoJ2x0g4qot6AVbR8mT1Tp5Wag&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2025-08-14 02:27:13,388 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-14 02:27:13,391 - INFO - Gmail authentication successful.
+2025-08-14 02:27:14,025 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7224c1ac1d60>
+2025-08-14 02:27:14,025 - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7224c1b68dd0>, 4310.290553645)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7224c1ef1280>
+2025-08-14 02:36:21,263 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-14 02:36:21,264 - INFO - Gmail authentication successful.
+2025-08-14 02:36:25,159 - INFO - Startup: found 2 messages.
+2025-08-14 02:36:25,537 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7352dbe99e20>
+2025-08-14 02:36:25,538 - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7352dbdde630>, 4861.819308547)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7352dc1a88c0>

@@ -1,0 +1,49 @@
+jbhunt_detection:
+  from_domains:
+    - jbhunt.com
+    - sg.jbhunt.com
+  sender_names_contains:
+    - J.B. Hunt
+    - 360boxStrategicCarrier
+  body_phrases:
+    - J.B. Hunt
+    - J.B. Hunt 360
+    - J.B. Hunt Transport
+  url_host_contains:
+    - jbhunt.com
+    - sg.jbhunt.com
+    - scm-static.jbhunt.com
+  evidence_weighting:
+    from_domain_match: 3
+    host_contains_match: 2
+    phrase_match: 1
+    sender_name_match: 2
+  threshold: 3
+
+jbhunt_subject_patterns:
+  APPOINTMENT_UPDATED: '\bappointment updated\b'
+  LOAD_ACCEPTED: '\bload\s+\w*\d*[A-Z]?\d*\s+has be(en )?accepted\b'
+  REGARDING_LOAD: '\bregarding load\b'
+  LOAD_UPDATE_NEEDED: '\bupdate needed\b'
+  PENDING_YOUR_RESPONSE: '\bpending your response\b'
+  ID_PATTERN: '\b\d{2}[A-Z]\d{4}\b'
+
+jbhunt_company_stamp:
+  footer_indicators:
+    - ©
+    - Copyright
+    - J.B. Hunt Transport
+    - J.B. Hunt 360
+  asset_hosts:
+    - scm-static.jbhunt.com
+    - www.jbhunt.com
+    - url*.sg.jbhunt.com
+
+reply_heuristics:
+  requires_reply_true_if:
+    - REGARDING_LOAD
+    - LOAD_UPDATE_NEEDED
+    - PENDING_YOUR_RESPONSE
+  requires_reply_false_if:
+    - APPOINTMENT_UPDATED
+    - LOAD_ACCEPTED

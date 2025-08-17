@@ -1,0 +1,4 @@
+id,from,from_domain,subject,subject_category,load_ids,is_jbhunt_label,has_images,word_count,needs_response,text_snippet
+123,"J.B. Hunt <noreply@jbhunt.com>",jbhunt.com,"Appointment Updated","APPOINTMENT_UPDATED","56T2448",True,False,85,False,"This load appointment has been updated..."
+124,"Load Board <offers@sg.jbhunt.com>",sg.jbhunt.com,"Regarding Load 55M0198","REGARDING_LOAD","55M0198",True,True,152,True,"Please update status for load 55M0198..."
+...
